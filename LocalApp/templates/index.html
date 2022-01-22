@@ -1,0 +1,144 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Recipe Recognition</title>
+    <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.bootcss.com/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet"> 
+	<style>
+	
+body
+{
+    background-image: url("https://wallpaperaccess.com/full/3692629.jpg");
+    background-size: cover;
+	overflow:auto;
+	background-repeat:no-repeat;
+	height:100%;
+	width:100%;
+	position: auto;
+	top:0px;
+	left:0px;
+}
+.pd{ 
+padding-bottom:50%;}
+
+.navbar
+{
+height:80px;
+margin: 0px;
+padding:20px;
+background-color:#9c1b19;
+opacity:0.8;
+font-family:'Roboto',sans-serif;
+font-style: italic;
+border-radius:20px;
+font-size:25px;
+position:sticky;
+top:0px;
+}
+.navbar a
+{
+color:white;
+float:right;
+text-decoration:none;
+font-style:normal;
+padding-right:20px;
+}
+.navbar a:hover{
+background-color:black;
+color:white;
+border-radius:15px;
+font-size:30px;
+padding-left:10px;
+}
+p
+{
+color:turqouise;
+font-style:italic;
+font-size:30px;
+}
+
+.left > * {
+  display:inline-block;}
+  
+.outer > * {
+  display:inline-block;}
+.outer a:hover{
+height:140px;
+width:140px;
+}
+
+.last {
+ position: fixed;
+ overflow-y: auto;
+   bottom: 0px;
+}  
+
+.zoom{
+padding: 20px;
+height:120px;
+width:120px;
+transition: transform .2s;
+margin: 0 auto;
+}
+.zoom:hover {
+  transform: scale(1.2);}
+img {
+  border-radius: 10px;
+}
+*{
+    margin:0;
+    padding:0;
+}
+
+	</style>
+</head>
+
+<body>
+    <div class="navbar">
+	   <div class="left">
+			<p><font color="white">Welcome</p></div>
+		<left><div class="right">
+			<a href="#div_contact">Contact</a>
+			<a href="/upload" >Recognize</a>	
+			<a href="/">Home</a>
+		</left></div>
+	<br>
+	</div>
+	   <br>
+<center><b class="pd"><font color="#0f0f0f" size="15" font-family="Comic Sans MS" >Recipe Recognition Using Deep Learning</font></b></center><br><br>
+<div class="page-wrapper">
+<br>
+<center>
+<div style="font-style:oblique; border-radius:25px; background-color: #f7f0f080;"><p><font color="#991715"><b>Recognizing recipes corresponding to given dish pictures facilitates the estimation of nutrition facts, which is crucial to various health relevant applications.The current approaches mostly focus on recognition of popular fast food.
+For instance, accurate detection and segmentation of the different food items in a food tray can be used for monitoring 
+food intake and nutritional information, and automatic billing to avoid the cashier bottleneck in self-service restaurants.
+This work deals with the problem of automated recognition of a photographed cooking dish and the subsequent output of the appropriate recipe.<b></p></div>
+</center>       
+<br>
+<br>
+<div id="last" style="background-color: #0f0f0f60;">
+<div id="div_contact" style="font-size:30px ;float:left;"> <p><font color="white"><h2>Contact:</h2></p>
+<p><font color="white"><h5>Phone Number: 9109390625</h5></p>
+<p><font color="white"><h5>Mail Id: priyanshsen21thjune@gmail.com</h5></p>
+</div>
+
+<br>
+<br>
+<center>
+    <div class="outer" >
+		<div class="zoom"><a href="https://twitter.com/priyanshsen19" target="_blank" style="padding-left:5px;"><img src="../static/images/twitter.png" alt="Twitter" height="120px" width="120px"></a></div>
+		<div class="zoom"><a href="https://github.com/priyanshsen19" target="_blank" style="padding-left:5px;"><img src="../static/images/linkedin1.png" alt="LinkedIn" height="120px" width="120px"></a></div>
+        <div class="zoom"><a href="https://www.linkedin.com/in/priyansh-sen-7a7282194/" target="_blank" style="padding-left:5px;"><img src="../static/images/github.png" alt="Github" height="120px" width="120px"></a></div>
+	</div>
+   </center>
+   <br>
+</div>
+</div>
+</body>
+</html>

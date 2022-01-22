@@ -1,0 +1,44 @@
+{% extends "RRprediction2.html" %} {% block content %}
+
+ 
+
+				<div style="float:center" >
+				<div style="position:top;">
+				<center><b class="pd"><font color="black" size="20" font-family="Comic Sans MS" >Recognition</font></b></center><br></div>
+				<div>
+					<h4><font color="black" >Upload Fast Food Image Here To Know Its Recipe:</h4>
+			<form action = "http://localhost:5000/" id="upload-file" method="post" enctype="multipart/form-data">
+				<label for="imageUpload" class="upload-label">
+					Choose...
+				</label>
+				<input type="file" name="image" id="imageUpload" accept=".png, .jpg, .jpeg">
+			</form>
+			
+
+			<div class="image-section" style="display:none;">
+				<div class="img-preview">
+					<div id="imagePreview">
+					</div>
+				</div>
+				<div>
+					<button type="button" class="btn btn-info btn-lg " id="btn-predict">Recognize</button>
+				</div>
+			</div>
+
+			<div class="loader" style="display:none;"></div>
+
+			<h3>
+				<span id="result"> </span>
+			</h3>
+
+		</div>
+			</div>
+			 
+		  </div>
+		</div>
+		</div>
+    </div>
+	
+{% endblock %}
+
+
